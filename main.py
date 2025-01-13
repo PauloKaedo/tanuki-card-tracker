@@ -7,7 +7,7 @@ def start_webcam():
         while True:
             ret, frame = cap.read()
             if not ret:
-                print("Error on capture!")
+                print("Capture Error!")
                 break
             
             cv2.imshow("Webcam Frame", frame)
